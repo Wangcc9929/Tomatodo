@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/count/count",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E7624F",
+    "navigationBarTitleText": "番茄Todo",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar":{
+    "selectedColor": "#000000",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"计时",
+        "iconPath":"./images/jishi2.png",
+        "selectedIconPath":"./images/jishi.png"
+      },
+      {
+        "pagePath": "pages/count/count",
+        "text": "统计",
+        "iconPath": "./images/tongji2.png",
+        "selectedIconPath": "./images/tongji.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "./images/huasheng.png",
+        "selectedIconPath": "./images/huasheng-active.png"
+      }
+    ]
+  }
+}

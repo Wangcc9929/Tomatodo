@@ -1,0 +1,38 @@
+<!-- 主页面 -->
+<view hidden="{{clockShow}}">
+  <view>
+    <slider min="1" max="120" show-value activeColor="#E7624F" value="{{time}}" bindchange="sliderChange"></slider>
+  </view>
+
+  <view class="task_text">
+    <view class="task_title">请选择要做的事情</view>
+    <view class="task_content">您将在接下来的{{time}}分钟专注这件事</view>
+  </view>
+  <view class="task_things">
+    <view wx:for="{{thingsArr}}" wx:key="id" class="things_item" bindtap="clickThings" data-index="{{index}}">
+      <view class="things_icon">
+        <image src="../../images/{{item.icon}}.png"></image>
+      </view>
+      <view class="things_text {{thingsActive==index?'.things_text_active':''}}">{{item.text}}</view>
+    </view>
+  </view>
+  <view class="task_start">
+    <button bindtap="start">开始专注</button>
+  </view>
+</view>
+<!-- 番茄时钟页面 -->
+<view hidden="{{!clockShow}}" class="clock" style="height:{{clockHeight}}rpx">
+  <view class="progress">
+    <canvas canvas-id="progress_active" class="progress_active"></canvas>
+    <view class="progress_text">{{timeStr}}</view>
+  </view>
+  <view class="btns">
+    <view class="returnBtn" wx:if="{{returnShow}}" bindtap="returned">返回</view>
+    <view class="pauseBtn" wx:if="{{pauseShow}}" bindtap="pause">暂停</view>
+    <view class="conAndAban" wx:if="{{conAndAbanShow}}">
+      <view class="continueBtn" bindtap="continued">继续</view>
+      <view class="abandonBtn" bindtap="abandon">放弃</view>
+    </view>
+  </view>
+
+</view>

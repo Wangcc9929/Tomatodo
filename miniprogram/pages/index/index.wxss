@@ -1,0 +1,94 @@
+slider{
+  width: 600rpx;
+  margin: 40px auto;
+}
+.task_text{
+  text-align: center;
+  margin: 20rpx auto;
+}
+.task_text .task_title{
+  font-size: 35rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.task_text .task_content{
+  font-size: 28rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  color:#999999;
+}
+.task_things{
+  display: flex;
+  flex-wrap: wrap;
+  width: 600rpx;
+  text-align: center;
+  margin:80rpx auto;
+}
+.task_things .things_item{
+  width: 200rpx;
+  hanging-punctuation: 100rpx;
+  margin-bottom: 50rpx;
+}
+.task_things .things_icon{
+  height: 60rpx;
+}
+.task_things .things_icon image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.task_things .things_text{
+  height: 40rpx;
+  font-size: 30rpx;
+}
+.task_things .things_text_active{
+  color:#E7624F;
+}
+.task_start{
+  width:400rpx;
+  height:100rpx;
+  margin: 40rpx auto;
+  
+}
+.task_start button{
+  border: 1rpx solid #E7624F;
+  border-radius: 20rpx;
+  color: #E7624F
+}
+.clock{
+  overflow: hidden;
+  background-color: #E7624F;
+}
+.progress{
+  position: relative;
+  width: 400rpx;
+  height: 400rpx;
+  margin: 140rpx auto;
+}
+.progress .progress_bg,.progress .progress_active{
+  position: absolute;
+  width: 400rpx;
+  height: 400rpx;
+  left: 0;
+  right: 0;
+}
+.progress .progress_text{
+  position: absolute;
+  left: 120rpx;
+  top: 170rpx;
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 35rpx;
+  color: #fff;
+  text-align: center;
+}
+.returnBtn, .pauseBtn, .continueBtn, .abandonBtn{
+  width: 280rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color:#ffffff;
+  border: 3rpx solid #ffffff;
+  border-radius: 20rpx;
+  margin: 10rpx auto;
+}
